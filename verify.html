@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verify it's you · Kestrelwood Dental Supply</title><link rel="stylesheet" href="portal.css"></head><body>
+<header><div class="logo"><i></i>Kestrelwood Dental Supply</div><nav><a href="#">Catalog</a><a href="#">Support</a></nav></header>
+<main><div class="card auth">
+<h1>Verify it's you</h1><p>We sent a 6-digit verification code to the phone ending in 4417. Enter it below to continue.</p>
+<form id="f"><label for="code">Verification code</label><input id="code" name="code" inputmode="numeric" maxlength="6" autocomplete="one-time-code">
+<button type="submit">Verify</button><div class="err" id="err"></div></form>
+</div><div class="foot">Kestrelwood Dental Supply · Demo site for illustration</div></main>
+<script>
+if(sessionStorage.getItem('kw_step')!=='code') location.href='index.html';
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();
+const c=document.getElementById('code').value.trim();
+if(/^\d{6}$/.test(c)){sessionStorage.setItem('kw_step','in');location.href='orders.html';}
+else document.getElementById('err').textContent='Enter the 6-digit code.';});
+</script></body></html>
