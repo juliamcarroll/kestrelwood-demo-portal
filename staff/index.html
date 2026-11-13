@@ -1,13 +1,13 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sign in · Juniper Lane Dental Staff Portal</title><link rel="stylesheet" href="staff.css"></head><body>
-<header><div class="logo"><i></i><div>Juniper Lane Dental<small>Staff portal</small></div></div></header>
-<main><div class="card auth">
+<div class="top"><div class="brand"><i></i>Juniper Lane Dental <em>Staff Portal</em></div></div>
+<div class="auth">
 <h1>Staff sign in</h1><p>Schedules, time off and team announcements.</p>
 <form id="f" autocomplete="on">
 <label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="username">
 <label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password">
 <button type="submit">Sign in</button><div class="err" id="err"></div></form>
-</div><div class="foot">Juniper Lane Dental · Demo site for illustration</div></main>
+</div><div class="foot">Juniper Lane Dental · Demo site for illustration</div>
 <script src="staff.js"></script><script>
 document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();
 const ok=await kwSignIn(document.getElementById('email').value,document.getElementById('password').value);
