@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:#0b0b14;color:#f5f3ff;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 56px;border-bottom:1px solid #24243a;position:sticky;top:0;background:#0b0b14}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.03em;display:flex;align-items:center;gap:10px}.logo i{width:26px;height:26px;border-radius:9px;background:linear-gradient(135deg,#f0abfc,#a855f7)}
+nav{display:flex;gap:30px;color:#a1a1b5;font-weight:500;font-size:15px}nav a.on{color:#f5f3ff}
+.cta{background:#a855f7;color:#fff;padding:11px 20px;border-radius:18px;font-weight:600;font-size:15px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:70px 56px 50px;max-width:1300px;margin:0 auto}
+.eyebrow{color:#a855f7;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:64px;line-height:1.02;letter-spacing:-.045em;margin:14px 0 18px;font-weight:800}
+.lead{font-size:20px;line-height:1.55;color:#a1a1b5;max-width:560px}
+.btns{display:flex;gap:12px;margin-top:28px}.ghost{border:1px solid #24243a;padding:11px 20px;border-radius:18px;font-weight:600}
+.wand{width:100%;max-width:440px}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1300px;margin:0 auto 70px;padding:0 56px}
+.spec{background:#141424;border:1px solid #24243a;border-radius:18px;padding:22px}.spec span{display:block;color:#a1a1b5;font-size:13px;margin-bottom:6px}.spec b{font-size:20px;letter-spacing:-.02em}
+.page{max-width:980px;margin:0 auto;padding:60px 56px 80px}
+.page h1{font-size:48px}
+.plan{border:1px solid #24243a;border-radius:22px;overflow:hidden;margin-top:28px;background:#141424}
+.row{display:grid;grid-template-columns:240px 1fr;gap:20px;padding:20px 26px;border-top:1px solid #24243a;font-size:17px}.row:first-child{border-top:0}
+.row span{color:#a1a1b5;font-weight:500}.row b{font-weight:600}
+.note{margin-top:20px;color:#a1a1b5;font-size:14px}
+.foot{text-align:center;color:#a1a1b5;font-size:13px;padding:30px 0;border-top:1px solid #24243a}
