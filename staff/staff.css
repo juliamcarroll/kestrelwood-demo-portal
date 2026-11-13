@@ -1,0 +1,50 @@
+:root{--ink:#1d2433;--muted:#667085;--line:#e4e7ec;--bg:#f5f7fa;--brand:#2f6f73;--brand2:#e7f2f2}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+header{background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:36px;padding:12px 28px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;color:var(--ink)}
+.logo small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.logo i{width:32px;height:32px;border-radius:9px;background:var(--brand);position:relative;display:inline-block}
+.logo i:after{content:"";position:absolute;left:9px;top:7px;width:14px;height:18px;border-radius:7px 7px 4px 4px;background:#fff}
+nav{display:flex;gap:4px;flex:1}
+nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500}
+nav a.on{color:var(--brand);background:var(--brand2)}
+.me{display:flex;align-items:center;gap:8px;color:var(--muted);font-weight:500}
+.av{width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:11px;font-weight:700;color:#fff;flex:0 0 30px}
+.av.doc{background:#3b5bdb}.av.hyg{background:#2b8a3e}.av.asst{background:#0c8599}.av.desk{background:#e8590c}.av.mgr{background:#7048e8}
+main{max-width:1500px;margin:0 auto;padding:22px 28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px}
+.bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.wk{display:flex;align-items:center;gap:10px}
+.wk h2{font-size:20px;margin:0 6px}
+.nav{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);text-decoration:none;font-size:20px}
+.chip{background:var(--brand2);color:var(--brand);border-radius:99px;padding:3px 10px;font-weight:600;font-size:12px}
+.legend{display:flex;gap:14px;color:var(--muted);font-size:12px}
+.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.layout{display:grid;grid-template-columns:1fr 220px;gap:16px}
+.grid{overflow:hidden}
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+th{font-weight:600;text-align:left;padding:10px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}
+th span{display:block;text-transform:uppercase;letter-spacing:.06em}
+th b{font-size:18px;color:var(--ink)}
+th.today b{color:var(--brand)}
+th.who,td.who{width:190px}
+td{vertical-align:top;padding:8px;border-bottom:1px solid var(--line);border-left:1px solid var(--line)}
+td.who{border-left:0;vertical-align:middle}.wh{display:flex;align-items:center;gap:10px}
+td.who b{display:block;font-size:13px}td.who small{color:var(--muted)}
+.blk{border-radius:7px;padding:4px 8px;margin-bottom:4px;font-size:12px;font-weight:600;line-height:1.3;background:var(--bg2);color:var(--fg);border-left:3px solid var(--c)}
+.blk em{font-style:normal;font-weight:500;opacity:.8;font-size:11px;margin-right:6px}
+.clinic{--c:#3b5bdb;--bg2:#edf2ff;--fg:#2b3f9e}.surgery{--c:#ae3ec9;--bg2:#f8f0fc;--fg:#7a2a8c}
+.hygiene{--c:#2b8a3e;--bg2:#ebfbee;--fg:#24692f}.meeting{--c:#e67700;--bg2:#fff4e6;--fg:#a35400}
+.out{--c:#868e96;--bg2:repeating-linear-gradient(135deg,#f1f3f5 0 6px,#e9ecef 6px 12px);--fg:#495057}
+.admin{--c:#7048e8;--bg2:#f3f0ff;--fg:#5235b3}.desk{--c:#e8590c;--bg2:#fff4e6;--fg:#a33f08}
+.off{color:#adb5bd;font-size:12px;padding:5px 2px}
+.side{padding:16px}.side h3{margin:0 0 10px;font-size:14px}
+.ann{padding:9px 0;border-bottom:1px dashed var(--line)}.ann b{display:block;font-size:13px}.ann small{color:var(--muted)}
+.auth{max-width:400px;margin:80px auto;padding:30px}
+.auth h1{font-size:22px;margin:0 0 6px}.auth p{color:var(--muted);margin:0 0 20px}
+label{display:block;font-size:13px;font-weight:600;margin:14px 0 6px}
+input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;font-size:15px}
+button{margin-top:20px;width:100%;padding:12px;border:0;border-radius:8px;background:var(--brand);color:#fff;font-size:15px;font-weight:600;cursor:pointer}
+.err{color:#b42318;font-size:13px;margin-top:10px;min-height:18px}
+.foot{color:var(--muted);font-size:12px;text-align:center;margin:26px 0}
