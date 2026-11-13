@@ -1,15 +1,10 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sign in · Juniper Lane Dental Staff Portal</title><link rel="stylesheet" href="staff.css"></head><body>
-<div class="top"><div class="brand"><i></i>Juniper Lane Dental <em>Staff Portal</em></div></div>
-<div class="auth">
-<h1>Staff sign in</h1><p>Schedules, time off and team announcements.</p>
-<form id="f" autocomplete="on">
-<label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="username">
+<title>Log in · Tidepool</title><link rel="stylesheet" href="hr.css"></head><body class="authpage">
+<div class="authbox"><div class="logo big"><i></i>tidepool</div><h1>Log in to Tidepool</h1><p>HR, payroll and benefits for your team.</p>
+<form id="f" autocomplete="on"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="username">
 <label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password">
-<button type="submit">Sign in</button><div class="err" id="err"></div></form>
-</div><div class="foot">Juniper Lane Dental · Demo site for illustration</div>
-<script src="staff.js"></script><script>
+<button type="submit">Log in</button><div class="err" id="err"></div></form></div><div class="foot">Tidepool · Demo site for illustration</div>
+<script src="hr.js"></script><script>
 document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();
 const ok=await kwSignIn(document.getElementById('email').value,document.getElementById('password').value);
-if(ok) location.href='verify.html'; else document.getElementById('err').textContent='That email and password don’t match our records.';});
-</script></body></html>
+if(ok) location.href='verify.html'; else document.getElementById('err').textContent='That email and password don\u2019t match.';});</script></body></html>

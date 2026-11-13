@@ -1,15 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Verify it's you · Juniper Lane Dental Staff Portal</title><link rel="stylesheet" href="staff.css"></head><body>
-<div class="top"><div class="brand"><i></i>Juniper Lane Dental <em>Staff Portal</em></div></div>
-<div class="auth">
-<h1>Verify it's you</h1><p>We sent a 6-digit verification code to the phone ending in 4417. Enter it below to continue.</p>
+<title>Verify · Tidepool</title><link rel="stylesheet" href="hr.css"></head><body class="authpage">
+<div class="authbox"><div class="logo big"><i></i>tidepool</div><h1>Check your phone</h1><p>We texted a 6-digit code to the number ending in 4417.</p>
 <form id="f"><label for="code">Verification code</label><input id="code" name="code" inputmode="numeric" maxlength="6" autocomplete="one-time-code">
-<button type="submit">Verify</button><div class="err" id="err"></div></form>
-</div><div class="foot">Juniper Lane Dental · Demo site for illustration</div>
+<button type="submit">Verify</button><div class="err" id="err"></div></form></div><div class="foot">Tidepool · Demo site for illustration</div>
 <script>
 if(sessionStorage.getItem('jl_step')!=='code') location.href='index.html';
-document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();
-const c=document.getElementById('code').value.trim();
-if(/^\d{6}$/.test(c)){sessionStorage.setItem('jl_step','in');location.href='home.html';}
-else document.getElementById('err').textContent='Enter the 6-digit code.';});
-</script></body></html>
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const c=document.getElementById('code').value.trim();
+if(/^\d{6}$/.test(c)){sessionStorage.setItem('jl_step','in');location.href='home.html';}else document.getElementById('err').textContent='Enter the 6-digit code.';});</script></body></html>

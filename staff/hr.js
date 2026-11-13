@@ -1,4 +1,4 @@
-// Juniper Lane Dental staff portal (fictional demo). Pages decrypt only after sign-in and code.
+// Tidepool (fictional demo portal). Pages decrypt only after sign-in and code.
 const KW_CHECK='8cdd8a15f1dcb18d6f4379c6e547c45fd382b3f8470066b1556120c06b1887bc';const DOMAIN='@juniperlanedental.example.com';
 const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
 const sha=s=>crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));
