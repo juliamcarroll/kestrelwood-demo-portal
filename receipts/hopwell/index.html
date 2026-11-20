@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Log in · Hopwell</title><link rel="stylesheet" href="site.css"></head><body><div class="authbox"><a class="logo" style="margin-bottom:22px;display:flex"><i></i>Hopwell</a><h1>Welcome back</h1><p>Log in to see your activity and receipts.</p>
+<form id="f"><label for="email">Email</label><input id="email" type="email" autocomplete="username"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password">
+<button type="submit">Log in</button><div class="err" id="err"></div></form></div><div class="foot">Hopwell · Demo site for illustration</div>
+<script src="site.js"></script><script>document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();const ok=await kwSignIn(document.getElementById('email').value,document.getElementById('password').value);
+if(ok) location.href='list.html'; else document.getElementById('err').textContent='That email and password don\u2019t match.';});</script></body></html>
